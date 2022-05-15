@@ -6,11 +6,11 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'my-model'
-DESCRIPTION = "Example model package."
-URL = "Add Link to Githb Repo"
-EMAIL = "Add email"
-AUTHOR = "Add your name"
+NAME = 'titanic-survival-model'
+DESCRIPTION = "Model package for Titanic data prediction."
+URL = "https://github.com/nsadawi/ML-Model-Packaging"
+EMAIL = "n.sadawi@gmail.com"
+AUTHOR = "Noureddin Sadawi"
 REQUIRES_PYTHON = ">=3.6.0"
 
 
