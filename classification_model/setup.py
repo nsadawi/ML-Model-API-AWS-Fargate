@@ -6,12 +6,12 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'my-model'
-DESCRIPTION = "Example model package."
-URL = "Add Link to Githb Repo"
-EMAIL = "Add email"
-AUTHOR = "Add your name"
-REQUIRES_PYTHON = ">=3.6.0"
+NAME = 'nour-titanic'
+DESCRIPTION = "To predict titanic survival!"
+URL = "https://github.com/nsadawi/ML-Model-API-AWS-Fargate/tree/master/classification_model"
+EMAIL = "noureddin@softlight.tech"
+AUTHOR = "Noureddin Sadawi"
+REQUIRES_PYTHON = ">=3.7.6"
 
 
 # The rest you shouldn't have to touch too much :)
