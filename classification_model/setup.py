@@ -12,6 +12,12 @@ URL = "https://github.com/nsadawi/ML-Model-API-AWS-Fargate/tree/master/classific
 EMAIL = "noureddin@softlight.tech"
 AUTHOR = "Noureddin Sadawi"
 REQUIRES_PYTHON = ">=3.7.6"
+NAME = 'titanic-survival-model'
+DESCRIPTION = "Model package for Titanic data prediction."
+URL = "https://github.com/nsadawi/ML-Model-Packaging"
+EMAIL = "n.sadawi@gmail.com"
+AUTHOR = "Noureddin Sadawi"
+REQUIRES_PYTHON = ">=3.7.6"
 
 
 # The rest you shouldn't have to touch too much :)
