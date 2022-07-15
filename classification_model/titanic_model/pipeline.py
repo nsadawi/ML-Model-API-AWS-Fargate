@@ -11,8 +11,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-from model.config.core import config
-from model.processing.features import ExtractLetterTransformer
+from titanic_model.config.core import config
+from titanic_model.processing.features import ExtractLetterTransformer
 
 titanic_pipe = Pipeline(
     [

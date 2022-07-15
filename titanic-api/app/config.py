@@ -6,6 +6,7 @@ from typing import List, cast
 from loguru import logger
 from pydantic import AnyHttpUrl, BaseSettings
 
+
 # config for logging
 # logging levels: https://docs.python.org/3/library/logging.html#levels
 # it's hierarchical, lower levels include higher levels automatically
@@ -29,8 +30,9 @@ class Settings(BaseSettings):
     ]
 
     PROJECT_NAME: str = "Titanic Survival Prediction API"
-    #this is specific to pydantic so we can specify some options
-    #for our pydantic classes such as being case sensitive
+
+    # this is specific to pydantic so we can specify some options
+    # for our pydantic classes such as being case sensitive
     class Config:
         case_sensitive = True
 
@@ -58,7 +60,7 @@ class InterceptHandler(logging.Handler):
 
 # we're taking the uvicorn loggers and intercepting anything they capture.
 # from the loguru package
-# https://loguru.readthedocs.io/en/stable/overview.html#entirely-compatible-with-standard-logging        
+# https://loguru.readthedocs.io/en/stable/overview.html#entirely-compatible-with-standard-logging
 def setup_app_logging(config: Settings) -> None:
     """Prepare custom logging for our application."""
 
@@ -72,5 +74,6 @@ def setup_app_logging(config: Settings) -> None:
         handlers=[{"sink": sys.stderr, "level": config.logging.LOGGING_LEVEL}]
     )
 
-# the settings object gets exported 
+
+# the settings object gets exported
 settings = Settings()

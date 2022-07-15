@@ -1,13 +1,12 @@
 include *.txt
 include *.md
 include *.pkl
-recursive-include ./model/*
+recursive-include ./titanic_model/*
 
-include model/datasets/train.csv
-include model/datasets/test.csv
-include model/trained_models/*.pkl
-include model/VERSION
-include model/config.yml
+include titanic_model/datasets/raw.csv
+include titanic_model/trained_models/*.pkl
+include titanic_model/VERSION
+include titanic_model/config.yml
 
 include ./requirements/requirements.txt
 include ./requirements/test_requirements.txt

@@ -18,6 +18,7 @@ app = FastAPI(
 
 root_router = APIRouter()
 
+
 # the home endpoint
 # function has input request .. we define the respose body and retrun it as
 # HTML response
@@ -37,7 +38,8 @@ def index(request: Request) -> Any:
 
     return HTMLResponse(content=body)
 
-## specify more complex api endpoints 
+
+# specify more complex api endpoints
 # we have to specify them using include_router method
 app.include_router(api_router, prefix=settings.API_V1_STR)
 app.include_router(root_router)

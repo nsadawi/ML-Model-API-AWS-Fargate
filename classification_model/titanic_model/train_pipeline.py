@@ -1,8 +1,8 @@
 from sklearn.model_selection import train_test_split
 
-from model.config.core import config
-from model.pipeline import titanic_pipe
-from model.processing.data_manager import load_dataset, save_pipeline
+from titanic_model.config.core import config
+from titanic_model.pipeline import titanic_pipe
+from titanic_model.processing.data_manager import load_dataset, save_pipeline
 
 
 def run_training() -> None:

@@ -1,5 +1,5 @@
 # Package Overview
-package_name: model
+package_name: titanic_model
 
 # Data Files
 raw_data_file: raw.csv
@@ -35,7 +35,6 @@ unused_fields:
   - ticket
   - boat
   - body
-  - home.dest
 
 numerical_vars:
   - age
