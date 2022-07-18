@@ -34,11 +34,12 @@ unused_fields:
   - name
   - ticket
   - boat
-  - body
 
 numerical_vars:
   - age
   - fare
+  - parch
+  - sibsp
 
 categorical_vars:
   - sex

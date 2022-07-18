@@ -33,12 +33,11 @@ class TitanicDataInputSchema(BaseModel):
     age: Optional[int]
     sibsp: Optional[int]
     parch: Optional[int]
-    ticket: Optional[int]
+    ticket: Optional[str]
     fare: Optional[float]
     cabin: Optional[str]
     embarked: Optional[str]
     boat: Optional[Union[str, int]]
-    body: Optional[int]
 
 
 class MultipleTitanicDataInputs(BaseModel):
