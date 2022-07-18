@@ -6,7 +6,7 @@ from titanic_model.processing.validation import TitanicDataInputSchema
 
 class PredictionResults(BaseModel):
     errors: Optional[Any]
-    version: str
+    version: Optional[str]
     predictions: Optional[List[float]]
 
 
@@ -34,7 +34,6 @@ class MultipleTitanicDataInputs(BaseModel):
                         "cabin": "C148",
                         "embarked": "C",
                         "boat": "5",
-                        "body": 7,
                     },
                     {
                         "pclass": 1,
@@ -48,7 +47,6 @@ class MultipleTitanicDataInputs(BaseModel):
                         "cabin": "C148",
                         "embarked": "C",
                         "boat": "5",
-                        "body": 7,
                     },
                     {
                         "pclass": 1,
@@ -62,7 +60,6 @@ class MultipleTitanicDataInputs(BaseModel):
                         "cabin": "C148",
                         "embarked": "C",
                         "boat": "5",
-                        "body": 7,
                     },
                 ]
             }
