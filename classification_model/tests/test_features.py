@@ -2,7 +2,7 @@ from titanic_model.config.core import config
 from titanic_model.processing.features import ExtractLetterTransformer
 
 
-def test_temporal_variable_transformer(sample_input_data):
+def test_extract_first_letter_transformer(sample_input_data):
     # Given
     transformer = ExtractLetterTransformer(
         variables=config.model_config.cabin_vars,  # cabin
