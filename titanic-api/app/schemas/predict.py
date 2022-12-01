@@ -14,9 +14,9 @@ class MultipleTitanicDataInputs(BaseModel):
     inputs: List[TitanicDataInputSchema]
 
     # in this pydantic config class we're able to provide an example
-    # example with dummy values
+    # with dummy values
     # we can try this example out in our documentation
-    # fastapi pics up inputs and response models of diff endpoints
+    # fastapi picks up inputs and response models of diff endpoints
     # based on that and little config we get documentation out of the box
     class Config:
         schema_extra = {

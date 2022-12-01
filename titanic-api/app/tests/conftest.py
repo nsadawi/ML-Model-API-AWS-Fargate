@@ -30,15 +30,6 @@ def test_data() -> pd.DataFrame:
     return X_test
 
 
-# @pytest.fixture(scope="module")
-#    # use the load_dataset function from our package
-# def test_datax() -> pd.DataFrame:
-#    # as well as the test data file
-#    # any consuming application of the package gets out of the box a series of
-#    # test data and utilities so it can use that test data
-#    return load_dataset(file_name=config.app_config.test_data_file)
-
-
 # standard pattern for setting up fastapi test client so we can make api calls
 @pytest.fixture()
 def client() -> Generator:
