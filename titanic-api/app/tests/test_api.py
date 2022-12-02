@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from fastapi.testclient import TestClient
 from sklearn.metrics import accuracy_score
+from titanic_model.config.core import config
 
 
 # a simple test that uses one fixture (defined in conftest module)
@@ -27,6 +28,6 @@ def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
     assert isinstance(predictions[0], float)
     assert prediction_data.get("errors") is None
     assert len(predictions) == expected_no_predictions
-    y_true = test_data["survived"]
+    y_true = test_data[config.model_config.target]
     accuracy = accuracy_score(predictions, y_true)
     assert accuracy > 0.7
